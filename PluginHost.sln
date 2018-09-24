@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Host", "PluginHost\Plugin.Host.csproj", "{ACEBB221-6622-4D78-B52D-DE8C1ECD3BCB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC7D3B08-F6BE-4B7E-9945-134C4DEEC590} = {EC7D3B08-F6BE-4B7E-9945-134C4DEEC590}
+		{D0D175CB-41F4-40B2-AF3A-6461B23643D3} = {D0D175CB-41F4-40B2-AF3A-6461B23643D3}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Interface", "Plugin.Interface\Plugin.Interface.csproj", "{CD98A213-CE77-4634-8492-6A4A1BE0885E}"
 EndProject
@@ -16,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 		stylecop.json = stylecop.json
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Example2", "Plugin.Example2\Plugin.Example2.csproj", "{D0D175CB-41F4-40B2-AF3A-6461B23643D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +41,10 @@ Global
 		{EC7D3B08-F6BE-4B7E-9945-134C4DEEC590}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC7D3B08-F6BE-4B7E-9945-134C4DEEC590}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC7D3B08-F6BE-4B7E-9945-134C4DEEC590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D175CB-41F4-40B2-AF3A-6461B23643D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D175CB-41F4-40B2-AF3A-6461B23643D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D175CB-41F4-40B2-AF3A-6461B23643D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D175CB-41F4-40B2-AF3A-6461B23643D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

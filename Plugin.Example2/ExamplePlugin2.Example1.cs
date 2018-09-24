@@ -3,18 +3,18 @@
 // </copyright>
 
 using System.ComponentModel.Composition;
-using Plugin.Example.Logging;
+using Plugin.Example2.Logging;
 using Plugin.Interface;
 
-namespace Plugin.Example
+namespace Plugin.Example2
 {
 
     [Export(typeof(IPlugin))]
-    public class ExamplePlugin : IPlugin
+    public class ExamplePlugin2 : IPlugin
     {
-        private static readonly ILog Logger = LogProvider.For<ExamplePlugin>();
+        private static readonly ILog Logger = LogProvider.For<ExamplePlugin2>();
 
-        public string Description => "Plugin Example";
+        public string Description => "Second Plugin Example";
 
         public Status Status { get; set; }
 
@@ -23,13 +23,12 @@ namespace Plugin.Example
 
         public void Start(string message)
         {
-            Logger.Info("Plugin Starting");
+            Logger.Info("Plugin 2 Starting");
 
             var test = new TimerTest();
             test.StartTimer();
 
-            this.something.DoSomething("a value blah");
+            this.something.DoSomething("a value from plugin2");
         }
-
     }
 }

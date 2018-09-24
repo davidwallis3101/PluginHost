@@ -1,18 +1,14 @@
-﻿// <copyright file="AssemblyInfo.cs" company="David Wallis">
-// Copyright (c) David Wallis. All rights reserved.
-// </copyright>
-
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Plugin.Example")]
+[assembly: AssemblyTitle("Plugin.Example2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Plugin.Example")]
+[assembly: AssemblyProduct("Plugin.Example2")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -23,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ec7d3b08-f6be-4b7e-9945-134c4deec590")]
+[assembly: Guid("d0d175cb-41f4-40b2-af3a-6461b23643d3")]
 
 // Version information for an assembly consists of the following four values:
 //

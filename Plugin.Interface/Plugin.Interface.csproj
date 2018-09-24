@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,9 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IPlugin.cs" />
+    <Compile Include="ISomething.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Status.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\stylecop.json">
+      <Link>stylecop.json</Link>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
