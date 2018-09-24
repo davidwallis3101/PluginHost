@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginHost", "PluginHost\PluginHost.csproj", "{ACEBB221-6622-4D78-B52D-DE8C1ECD3BCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Host", "PluginHost\Plugin.Host.csproj", "{ACEBB221-6622-4D78-B52D-DE8C1ECD3BCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Interface", "Plugin.Interface\Plugin.Interface.csproj", "{CD98A213-CE77-4634-8492-6A4A1BE0885E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Example", "Plugin.Example\Plugin.Example.csproj", "{EC7D3B08-F6BE-4B7E-9945-134C4DEEC590}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BFA857B7-1538-40C9-842F-4D3CD02B3685}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+		stylecop.json = stylecop.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,11 +27,20 @@ Global
 		{ACEBB221-6622-4D78-B52D-DE8C1ECD3BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACEBB221-6622-4D78-B52D-DE8C1ECD3BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACEBB221-6622-4D78-B52D-DE8C1ECD3BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD98A213-CE77-4634-8492-6A4A1BE0885E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD98A213-CE77-4634-8492-6A4A1BE0885E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD98A213-CE77-4634-8492-6A4A1BE0885E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD98A213-CE77-4634-8492-6A4A1BE0885E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC7D3B08-F6BE-4B7E-9945-134C4DEEC590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7D3B08-F6BE-4B7E-9945-134C4DEEC590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7D3B08-F6BE-4B7E-9945-134C4DEEC590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7D3B08-F6BE-4B7E-9945-134C4DEEC590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45
 		SolutionGuid = {EACA65A7-3339-46D4-BAA3-634A7E9975C0}
 	EndGlobalSection
 EndGlobal
