@@ -4,7 +4,7 @@ using Plugin.Example.Logging;
 
 namespace Plugin.Example
 {
-    internal class TimerTest
+    public class TimerTest
     {
         private static readonly ILog Logger = LogProvider.For<TimerTest>();
 

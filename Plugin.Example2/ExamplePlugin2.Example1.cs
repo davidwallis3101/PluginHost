@@ -18,7 +18,10 @@ namespace Plugin.Example2
 
         public Status Status { get; set; }
 
-        [Import]
+        // https://stackoverflow.com/questions/22735304/mef-and-object-disposal
+        [Import(RequiredCreationPolicy = CreationPolicy.Shared)]
+        // [ImportMany] // http://blogs.microsoft.co.il/bnaya/2010/07/09/testing-and-debugging-mef-tips-part-1/
+        // [Import] // was using this one successfully
         public ISomething something { get; set; }
 
         public void Start(string message)

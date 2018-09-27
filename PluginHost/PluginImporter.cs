@@ -62,7 +62,7 @@ namespace Plugin.Host
             {
                 log.Info("Plugin Description: {0} Plugin Version {1}", com.Description, Assembly.GetAssembly(com.GetType()).GetName().Version.ToString());
 
-                com.Start(string.Format("test from host {0}", com.Description));
+                com.Start($"test from host {com.Description}");
 
                 // result.Add(com.Value.ManipulateOperation(args));
             }
